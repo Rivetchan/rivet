@@ -43,7 +43,7 @@
   },
   {
     "category": "Database",
-    "name": "PostgreSQL",
+    "name": "MariaDB",
     "level": 78,
     "color": "blue"
   },
