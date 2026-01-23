@@ -1,4 +1,4 @@
-name = "portofolio-new"
+name = "rivet"
 type = "javascript"
 account_id = "fd5d72f860336cfd95d5785b820d7dff"
 workers_dev = true
@@ -6,5 +6,5 @@ route = ""
 zone_id = ""
 
 [site]
-bucket = "."       # folder root project
+bucket = "."
 entry-point = "."
