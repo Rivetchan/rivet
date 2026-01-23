@@ -205,9 +205,9 @@ async function loadCertificates() {
                     <span class="text-green-400 font-share-tech">${cert.year}</span>
                 </div>
 
-                <a href="#" onclick="openCertificate('${cert.link}')"
-                  class="text-cyan-400 hover:text-cyan-300 text-sm inline-flex items-center">
-                  <i class="fas fa-eye mr-2"></i> View Certificate
+                <a href="${cert.link}" target="_blank"
+                  class="text-cyan-400 hover:text-cyan-300 text-sm transition-colors inline-flex items-center">
+                  <i class="fas fa-external-link-alt mr-2"></i> View Certificate
                 </a>
             `
 
