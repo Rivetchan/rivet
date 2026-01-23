@@ -14,5 +14,13 @@
     "category": "Event",
     "icon": "fa-trophy",
     "link": "../assets/pdf/certificates/certificate 2.pdf"
+  },
+  {
+    "title": "Industrial Study Student Program",
+    "organizer": "PT. Pundi Mas berjaya and SMK Negeri 7 Batam",
+    "year": "2023 - 2024",
+    "category": "Internship",
+    "icon": "fa-industry",
+    "link": "../assets/pdf/certificates/certificate 3.pdf"
   }
 ]
