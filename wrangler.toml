@@ -1,6 +1,5 @@
-name = "rivet"
-main = ""  # kosong karena tidak ada worker script
+name = "portfolio-new"
 compatibility_date = "2026-01-23"
 
 [assets]
-directory = "."  # folder root project, tempat index.html & css/output.css
+directory = "."
