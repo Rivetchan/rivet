@@ -3,7 +3,7 @@
     "category": "Backend",
     "name": "C++",
     "level": 85,
-    "color": "dark blue"
+    "color": "blue"
   },
   {
     "category": "Frontend",
@@ -24,22 +24,22 @@
     "color": "green"
   },
   {
-    "category": "Backend",
-    "name": "Express.js",
-    "level": 85,
-    "color": "gray"
+    "category": "DevOps",
+    "name": "Arduino",
+    "level": 90,
+    "color": "green"
   },
   {
     "category": "Backend",
     "name": "Python",
     "level": 85,
-    "color": "blue"
+    "color": "green"
   },
   {
     "category": "Database",
     "name": "PHP",
     "level": 80,
-    "color": "purplish blue"
+    "color": "blue"
   },
   {
     "category": "Database",
@@ -55,20 +55,20 @@
   },
   {
     "category": "DevOps",
-    "name": "AWS",
-    "level": 65,
-    "color": "orange"
+    "name": "CorelDraw",
+    "level": 75,
+    "color": "green"
   },
   {
     "category": "Tools",
     "name": "Git/GitHub",
-    "level": 92,
+    "level": 95,
     "color": "orange"
   },
   {
     "category": "Security",
-    "name": "Web Security",
-    "level": 80,
-    "color": "red"
+    "name": "Kali Linux",
+    "level": 90,
+    "color": "blue"
   }
 ]
