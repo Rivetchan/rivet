@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-cyber-neon",
+  "name": "rivet",
   "version": "1.0.0",
-  "description": "Professional Cyber Neon Portfolio Website",
+  "description": "Professional Portfolio Website",
   "main": "index.html",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./css/output.css --watch",
@@ -11,7 +11,6 @@
   "keywords": [
     "portfolio",
     "cyber",
-    "neon",
     "tailwind",
     "developer"
   ],
