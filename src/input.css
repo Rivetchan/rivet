@@ -153,10 +153,17 @@
   .cyan-icon {
     @apply bg-cyan-500/10 text-cyan-400 border border-cyan-500/30;
   }
-
   .cyan-icon:hover {
     @apply bg-cyan-500/20;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+
+  .pink-icon {
+    @apply bg-pink-500/10 text-pink-400 border border-pink-500/30;
+  }
+
+  .pink-icon:hover {
+    @apply bg-cyan-500/20;
   }
 
   .purple-icon {
