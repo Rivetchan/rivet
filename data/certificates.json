@@ -22,5 +22,13 @@
     "category": "Internship",
     "icon": "fa-industry",
     "link": "../assets/pdf/certificates/certificate 3.pdf"
+  },
+  {
+    "title": "Vocational Competency Test",
+    "organizer": "SMK Negeri 7 Batam",
+    "year": "2024",
+    "category": "Competency test",
+    "icon": "fa-certificate",
+    "link": "../assets/pdf/certificates/certificate 4.pdf"
   }
 ]
