@@ -1,0 +1,50 @@
+[
+  {
+    "title": "CyberSecure Dashboard",
+    "description": "Dashboard keamanan siber real-time dengan visualisasi ancaman dan pelacakan aktivitas mencurigakan. Dilengkapi dengan sistem alert otomatis dan reporting.",
+    "techStack": ["React", "Node.js", "MongoDB", "Socket.io", "D3.js", "JWT"],
+    "githubLink": "https://github.com/cyberneon/cybersecure-dashboard",
+    "demoLink": "https://demo.cyberneon.tech",
+    "category": "Security"
+  },
+  {
+    "title": "NeonAuth System",
+    "description": "Sistem autentikasi dua faktor dengan enkripsi end-to-end dan monitoring login yang aman. Mendukung OAuth2, biometric, dan hardware tokens.",
+    "techStack": ["Node.js", "React", "JWT", "Redis", "WebSocket", "OAuth2"],
+    "githubLink": "https://github.com/cyberneon/neonauth",
+    "demoLink": "https://auth.cyberneon.tech",
+    "category": "Security"
+  },
+  {
+    "title": "CodeVault Manager",
+    "description": "Aplikasi manajemen kode sumber dengan enkripsi AES-256 dan kontrol versi terenkripsi. Perfect untuk tim development yang membutuhkan keamanan ekstra.",
+    "techStack": ["Python", "Flask", "PostgreSQL", "Vue.js", "Docker", "AES-256"],
+    "githubLink": "https://github.com/cyberneon/codevault",
+    "demoLink": "https://vault.cyberneon.tech",
+    "category": "Development"
+  },
+  {
+    "title": "Network Scanner Pro",
+    "description": "Alat pemindaian jaringan dengan deteksi kerentanan dan pelaporan otomatis. Dilengkapi dengan dashboard interaktif dan export berbagai format.",
+    "techStack": ["Python", "Nmap", "React", "FastAPI", "SQLite", "Pandas"],
+    "githubLink": "https://github.com/cyberneon/networkscanner",
+    "demoLink": "https://scanner.cyberneon.tech",
+    "category": "Security"
+  },
+  {
+    "title": "Cyber Blog Platform",
+    "description": "Platform blog dengan sistem keamanan tingkat lanjut dan proteksi terhadap serangan umum seperti XSS, SQL Injection, dan CSRF.",
+    "techStack": ["Next.js", "Node.js", "MongoDB", "Cloudflare", "JWT", "Markdown"],
+    "githubLink": "https://github.com/cyberneon/cyberblog",
+    "demoLink": "https://blog.cyberneon.tech",
+    "category": "Web Development"
+  },
+  {
+    "title": "Portfolio Tracker",
+    "description": "Aplikasi pelacakan portfolio developer dengan analisis teknologi dan rekomendasi skill. Visualisasi data interaktif dengan Chart.js.",
+    "techStack": ["React", "Tailwind CSS", "Chart.js", "Express", "MySQL", "REST API"],
+    "githubLink": "https://github.com/cyberneon/portfolio-tracker",
+    "demoLink": "https://tracker.cyberneon.tech",
+    "category": "Web Development"
+  }
+]

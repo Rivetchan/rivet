@@ -1,0 +1,74 @@
+[
+  {
+    "category": "Frontend",
+    "name": "React.js",
+    "level": 90,
+    "color": "cyan"
+  },
+  {
+    "category": "Frontend",
+    "name": "JavaScript/ES6+",
+    "level": 80,
+    "color": "yellow"
+  },
+  {
+    "category": "Frontend",
+    "name": "HTML5/CSS3",
+    "level": 98,
+    "color": "orange"
+  },
+  {
+    "category": "Backend",
+    "name": "Node.js",
+    "level": 88,
+    "color": "green"
+  },
+  {
+    "category": "Backend",
+    "name": "Express.js",
+    "level": 85,
+    "color": "gray"
+  },
+  {
+    "category": "Backend",
+    "name": "Python",
+    "level": 75,
+    "color": "blue"
+  },
+  {
+    "category": "Database",
+    "name": "MongoDB",
+    "level": 82,
+    "color": "green"
+  },
+  {
+    "category": "Database",
+    "name": "PostgreSQL",
+    "level": 78,
+    "color": "blue"
+  },
+  {
+    "category": "DevOps",
+    "name": "Docker",
+    "level": 70,
+    "color": "blue"
+  },
+  {
+    "category": "DevOps",
+    "name": "AWS",
+    "level": 65,
+    "color": "orange"
+  },
+  {
+    "category": "Tools",
+    "name": "Git/GitHub",
+    "level": 92,
+    "color": "orange"
+  },
+  {
+    "category": "Security",
+    "name": "Web Security",
+    "level": 80,
+    "color": "red"
+  }
+]

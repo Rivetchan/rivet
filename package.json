@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-cyber-neon",
+  "version": "1.0.0",
+  "description": "Professional Cyber Neon Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/output.css --minify"
+  },
+  "keywords": [
+    "portfolio",
+    "cyber",
+    "neon",
+    "tailwind",
+    "developer"
+  ],
+  "author": "Cyber Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "express": "^5.2.1"
+  }
+}

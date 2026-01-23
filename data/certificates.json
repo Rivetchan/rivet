@@ -1,0 +1,58 @@
+[
+  {
+    "title": "AWS Certified Solutions Architect",
+    "organizer": "Amazon Web Services",
+    "year": "2023",
+    "category": "Cloud",
+    "icon": "fa-cloud"
+  },
+  {
+    "title": "React Advanced Certification",
+    "organizer": "Meta (Facebook)",
+    "year": "2022",
+    "category": "Frontend",
+    "icon": "fa-react"
+  },
+  {
+    "title": "Cybersecurity Fundamentals",
+    "organizer": "Cisco Networking Academy",
+    "year": "2022",
+    "category": "Security",
+    "icon": "fa-shield-alt"
+  },
+  {
+    "title": "Node.js Backend Development",
+    "organizer": "Udemy",
+    "year": "2021",
+    "category": "Backend",
+    "icon": "fa-server"
+  },
+  {
+    "title": "MongoDB for Developers",
+    "organizer": "MongoDB University",
+    "year": "2021",
+    "category": "Database",
+    "icon": "fa-database"
+  },
+  {
+    "title": "Docker & Kubernetes Mastery",
+    "organizer": "Coursera",
+    "year": "2020",
+    "category": "DevOps",
+    "icon": "fa-docker"
+  },
+  {
+    "title": "JavaScript Algorithms & Data Structures",
+    "organizer": "freeCodeCamp",
+    "year": "2020",
+    "category": "Programming",
+    "icon": "fa-code"
+  },
+  {
+    "title": "Web Security Fundamentals",
+    "organizer": "OWASP",
+    "year": "2020",
+    "category": "Security",
+    "icon": "fa-lock"
+  }
+]

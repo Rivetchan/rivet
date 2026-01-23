@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Enno | Full Stack Developer</title>
+
+    <!-- Tailwind CSS Output -->
+    <link href="./css/output.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300ffff%22>💻</text></svg>"
+    />
+
+    <!-- Custom CSS untuk efek khusus -->
+    <style>
+      /* Effek cursor typing */
+      .typing-cursor {
+        display: inline-block;
+        width: 3px;
+        background-color: #00ff9c;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      /* Efek glow untuk progress bars */
+      .skill-progress-glow {
+        box-shadow:
+          0 0 10px currentColor,
+          0 0 20px currentColor;
+      }
+
+      /* Efek matrix background */
+      .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -10;
+        opacity: 0.03;
+        background:
+          linear-gradient(90deg, transparent 50%, rgba(0, 255, 255, 0.02) 50%),
+          linear-gradient(transparent 50%, rgba(139, 92, 246, 0.02) 50%);
+        background-size: 50px 50px;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #111827;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #00ffff, #8b5cf6);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, #00ccff, #7c3aed);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-exo overflow-x-hidden">
+    <!-- Background Matrix Effect -->
+    <div class="matrix-bg"></div>
+
+    <!-- Navigation -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-cyan-500/30 transition-all duration-300"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <a href="#home" class="text-2xl md:text-3xl font-orbitron font-bold tracking-wider">
+            <span class="text-cyan-400">RIVET</span><span class="text-purple-500">.IoT</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link group">
+              <i class="fas fa-home mr-2"></i>
+              <span>Home</span>
+              <div class="nav-underline group-hover:w-full"></div>
+            </a>
+            <a href="#about" class="nav-link group">
+              <i class="fas fa-user mr-2"></i>
+              <span>About</span>
+              <div class="nav-underline group-hover:w-full"></div>
+            </a>
+            <a href="#skills" class="nav-link group">
+              <i class="fas fa-code mr-2"></i>
+              <span>Skills</span>
+              <div class="nav-underline group-hover:w-full"></div>
+            </a>
+            <a href="#projects" class="nav-link group">
+              <i class="fas fa-project-diagram mr-2"></i>
+              <span>Projects</span>
+              <div class="nav-underline group-hover:w-full"></div>
+            </a>
+            <a href="#certificates" class="nav-link group">
+              <i class="fas fa-certificate mr-2"></i>
+              <span>Certificates</span>
+              <div class="nav-underline group-hover:w-full"></div>
+            </a>
+            <a href="#contact" class="nav-link group">
+              <i class="fas fa-envelope mr-2"></i>
+              <span>Contact</span>
+              <div class="nav-underline group-hover:w-full"></div>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <button id="menuToggle" class="md:hidden text-cyan-400 text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden py-4 border-t border-cyan-500/20">
+          <div class="flex flex-col space-y-4">
+            <a href="#home" class="mobile-nav-link">
+              <i class="fas fa-home mr-3"></i>
+              <span>Home</span>
+            </a>
+            <a href="#about" class="mobile-nav-link">
+              <i class="fas fa-user mr-3"></i>
+              <span>About</span>
+            </a>
+            <a href="#skills" class="mobile-nav-link">
+              <i class="fas fa-code mr-3"></i>
+              <span>Skills</span>
+            </a>
+            <a href="#projects" class="mobile-nav-link">
+              <i class="fas fa-project-diagram mr-3"></i>
+              <span>Projects</span>
+            </a>
+            <a href="#certificates" class="mobile-nav-link">
+              <i class="fas fa-certificate mr-3"></i>
+              <span>Certificates</span>
+            </a>
+            <a href="#contact" class="mobile-nav-link">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-20 flex items-center relative">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <!-- Terminal Window -->
+          <div class="neon-border p-1 rounded-xl mb-12">
+            <div class="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8">
+              <!-- Terminal Header -->
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex space-x-2">
+                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="font-share-tech text-cyan-400 text-sm">root@rivet:~</div>
+                <div class="w-16"></div>
+              </div>
+
+              <!-- Terminal Content -->
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <span class="text-green-400 font-share-tech mr-2">$</span>
+                  <span class="text-cyan-400 font-share-tech">whoami</span>
+                </div>
+                <div class="pl-4">
+                  <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="text-cyan-400">HI, I'M</span>
+                    <span class="text-purple-500">Enno Nurwansyah</span>
+                    <span class="text-white">R.</span>
+                  </h1>
+                  <div class="text-xl md:text-2xl font-orbitron">
+                    <span class="text-green-400">Software Engineering</span>
+                    <span class="text-gray-400 mx-2">|</span>
+                    <span class="text-cyan-400">D4 Robotics Engineering</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <span class="text-green-400 font-share-tech mr-2">$</span>
+                  <span class="text-cyan-400 font-share-tech">cat bio.txt</span>
+                </div>
+                <div class="pl-4">
+                  <p id="typing-text" class="text-lg md:text-xl text-gray-300 leading-relaxed"></p>
+                  <span class="typing-cursor"></span>
+                </div>
+
+                <div class="flex items-start">
+                  <span class="text-green-400 font-share-tech mr-2">$</span>
+                  <span class="text-cyan-400 font-share-tech">./skills --show</span>
+                </div>
+                <div class="pl-4">
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Cyber Security</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="#projects" class="cyber-btn cyan-btn">
+              <i class="fas fa-code mr-2"></i>
+              View Projects
+            </a>
+            <a href="#contact" class="cyber-btn purple-btn">
+              <i class="fas fa-terminal mr-2"></i>
+              Contact Me
+            </a>
+            <a href="assets/pdf/" class="cyber-btn green-btn">
+              <i class="fas fa-download mr-2"></i>
+              Download CV
+            </a>
+          </div>
+
+          <!-- Scroll Indicator -->
+          <div class="mt-16 flex flex-col items-center">
+            <div class="w-px h-16 bg-gradient-to-b from-cyan-500 to-transparent relative">
+              <div
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-cyan-400 rounded-full animate-bounce"
+              ></div>
+            </div>
+            <span class="mt-4 text-cyan-400 font-share-tech text-sm">SCROLL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="flex items-center mb-12">
+          <h2 class="section-title">
+            <span class="text-cyan-400 mr-2">01.</span>
+            <span class="text-white">About Me</span>
+          </h2>
+          <div class="flex-grow h-px bg-gradient-to-r from-cyan-500 to-purple-500 ml-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <!-- Left Column - Profile -->
+          <div>
+            <div class="relative mb-8">
+              <div
+                class="relative z-10 w-64 h-64 mx-auto rounded-full border-4 border-cyan-500 overflow-hidden"
+              >
+                <img
+                  src="./assets/images/profile.png"
+                  alt="Profile"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="absolute inset-0 rounded-full border-4 border-purple-500 animate-ping opacity-20"
+              ></div>
+              <div
+                class="absolute inset-4 rounded-full border-4 border-green-500 animate-pulse opacity-30"
+              ></div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl">
+              <h3 class="text-2xl font-bold mb-4 text-cyan-400">Software Engineering</h3>
+              <p class="text-gray-300 mb-6">
+                Full Stack Developer dengan spesialisasi di React, Node.js, dan keamanan siber.
+                Passionate tentang membangun aplikasi yang aman, scalable, dan user-friendly.
+              </p>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+                    <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Location</p>
+                    <p class="font-medium">Batam, Indonesia</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center"
+                  >
+                    <i class="fas fa-graduation-cap text-purple-400"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Education</p>
+                    <p class="font-medium">Politeknik Negeri Batam</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center"
+                  >
+                    <i class="fas fa-briefcase text-green-400"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Experience</p>
+                    <p class="font-medium">2+ Years</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+                    <i class="fas fa-envelope text-cyan-400"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Email</p>
+                    <p class="font-medium">ennonurwansyahr@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Timeline -->
+          <div>
+            <h3 class="text-3xl font-bold mb-6 text-purple-400">My Journey</h3>
+
+            <div class="space-y-8">
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="glass-card p-6 rounded-xl">
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="text-xl font-bold text-cyan-300">Senior Developer</h4>
+                    <span
+                      class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm font-share-tech"
+                      >2023 - Present</span
+                    >
+                  </div>
+                  <p class="text-gray-400 mb-2">CyberTech Solutions</p>
+                  <p class="text-gray-300">
+                    Memimpin pengembangan aplikasi web enterprise dengan fokus pada keamanan dan
+                    skalabilitas.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="glass-card p-6 rounded-xl">
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="text-xl font-bold text-cyan-300">Software Engineering</h4>
+                    <span
+                      class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-share-tech"
+                      >2021 - 2023</span
+                    >
+                  </div>
+                  <p class="text-gray-400 mb-2">SMK Negeri 7 Batam</p>
+                  <p class="text-gray-300">
+                    UKK: /100 | Belajar dan Mengembangkan berbagai aplikasi web menggunakan database
+                    serta membuat berbagai projek berbasis IoT.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="glass-card p-6 rounded-xl">
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="text-xl font-bold text-cyan-300">D4 Teknik Robotika</h4>
+                    <span
+                      class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm font-share-tech"
+                      >2019 - 2023</span
+                    >
+                  </div>
+                  <p class="text-gray-400 mb-2">Politeknik Negeri Batam</p>
+                  <p class="text-gray-300">
+                    IPK: -/4.00 | Fokus pada Project Based Learning (PBL) untuk mengembangkan sistem
+                    otomasi dan robotika berbasis IoT.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900/50">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="flex items-center mb-12">
+          <h2 class="section-title">
+            <span class="text-cyan-400 mr-2">02.</span>
+            <span class="text-white">Technical Skills</span>
+          </h2>
+          <div class="flex-grow h-px bg-gradient-to-r from-green-500 to-cyan-500 ml-4"></div>
+        </div>
+
+        <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12 text-lg">
+          Teknologi dan tools yang saya kuasai untuk membangun pengalaman digital yang luar biasa
+        </p>
+
+        <!-- Skills Grid -->
+        <div id="skillsContainer" class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+          <!-- Skills will be loaded from JSON -->
+        </div>
+
+        <!-- Tools Section -->
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-8 text-purple-400">Tools & Technologies</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 max-w-4xl mx-auto">
+            <!-- Tool Items -->
+            <div class="tool-item">
+              <i class="fab fa-js-square text-5xl text-yellow-400"></i>
+              <span class="mt-2">JavaScript</span>
+            </div>
+            <div class="tool-item">
+              <i class="fab fa-node-js text-5xl text-green-500"></i>
+              <span class="mt-2">Node.js</span>
+            </div>
+            <div class="tool-item">
+              <i class="fab fa-python text-5xl text-blue-400"></i>
+              <span class="mt-2">Python</span>
+            </div>
+            <div class="tool-item">
+              <i class="fa-brands fa-php text-5xl text-blue-500"></i>
+              <span class="mt-2">PHP</span>
+            </div>
+            <div class="tool-item">
+              <i class="devicon-cplusplus-plain text-5xl text-blue-500"></i>
+              <span class="mt-2">C++</span>
+            </div>
+            <div class="tool-item">
+              <i class="fab fa-docker text-5xl text-blue-500"></i>
+              <span class="mt-2">Docker</span>
+            </div>
+            <div class="tool-item">
+              <i class="fab fa-git-alt text-5xl text-orange-500"></i>
+              <span class="mt-2">Git</span>
+            </div>
+            <div class="tool-item">
+              <i class="fas fa-code text-5xl text-cyan-300"></i>
+              <span class="mt-2">VS Code</span>
+            </div>
+            <div class="tool-item">
+              <i class="fas fa-terminal text-5xl text-green-600"></i>
+              <span class="mt-2">Terminal</span>
+            </div>
+            <div class="tool-item">
+              <i class="devicon-arduino-plain text-5xl text-green-600"></i>
+              <span class="mt-2">Arduino</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="flex items-center mb-12">
+          <h2 class="section-title">
+            <span class="text-cyan-400 mr-2">03.</span>
+            <span class="text-white">Featured Projects</span>
+          </h2>
+          <div class="flex-grow h-px bg-gradient-to-r from-purple-500 to-cyan-500 ml-4"></div>
+        </div>
+
+        <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12 text-lg">
+          Beberapa proyek terbaru yang saya bangun dengan teknologi modern
+        </p>
+
+        <!-- Projects Grid -->
+        <div id="projectsContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Projects will be loaded from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-gray-900/50">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="flex items-center mb-12">
+          <h2 class="section-title">
+            <span class="text-cyan-400 mr-2">04.</span>
+            <span class="text-white">Certifications</span>
+          </h2>
+          <div class="flex-grow h-px bg-gradient-to-r from-cyan-500 to-green-500 ml-4"></div>
+        </div>
+
+        <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12 text-lg">
+          Sertifikasi profesional dan pencapaian dalam bidang teknologi
+        </p>
+
+        <!-- Certificates Grid -->
+        <div id="certificatesContainer" class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <!-- Certificates will be loaded from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="flex items-center mb-12">
+          <h2 class="section-title">
+            <span class="text-cyan-400 mr-2">05.</span>
+            <span class="text-white">Get In Touch</span>
+          </h2>
+          <div class="flex-grow h-px bg-gradient-to-r from-green-500 to-purple-500 ml-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-3xl font-bold mb-6 text-cyan-400">Let's Connect</h3>
+            <p class="text-gray-300 mb-8 text-lg">
+              Saya terbuka untuk freelance, full-time opportunities, atau jasa pembuatan project
+              atau pekerjaan tugas lainnya. Jangan ragu untuk menghubungi saya!
+            </p>
+
+            <div class="space-y-6 mb-8">
+              <!-- Email -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-envelope text-cyan-400 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Email</h4>
+                  <p class="text-gray-300">ennonurwansyahr@gmail.com</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-phone text-purple-400 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Phone</h4>
+                  <p class="text-gray-300">+62 823 8831 0607</p>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-map-marker-alt text-green-400 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Location</h4>
+                  <p class="text-gray-300">Batam, Kepulauan Riau, Indonesia</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex space-x-4">
+              <a href="https://github.com/Rivetchan/" class="social-icon cyan-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/enno-nurwansyah-rasyidi/"
+                class="social-icon purple-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/ennojpg/" class="social-icon green-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://x.com/EnnoRasyidi" class="social-icon cyan-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card p-8 rounded-2xl">
+            <h3 class="text-2xl font-bold mb-6 text-purple-400">Send Message</h3>
+
+            <form id="contactForm" class="space-y-6">
+              <div>
+                <label class="block text-gray-300 mb-2">Your Name</label>
+                <input type="text" class="cyber-input w-full" required />
+              </div>
+
+              <div>
+                <label class="block text-gray-300 mb-2">Your Email</label>
+                <input type="email" class="cyber-input w-full" required />
+              </div>
+
+              <div>
+                <label class="block text-gray-300 mb-2">Subject</label>
+                <input type="text" class="cyber-input w-full" required />
+              </div>
+
+              <div>
+                <label class="block text-gray-300 mb-2">Message</label>
+                <textarea rows="5" class="cyber-input w-full" required></textarea>
+              </div>
+
+              <button type="submit" class="cyber-btn cyan-btn w-full">
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-cyan-500/20">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <!-- Logo -->
+          <div class="mb-6">
+            <h3 class="text-3xl font-bold font-orbitron">
+              <span class="text-cyan-400">RIVET</span><span class="text-purple-500">.IoT</span>
+            </h3>
+          </div>
+
+          <!-- Quote -->
+          <p class="text-gray-400 mb-6 max-w-2xl mx-auto italic">
+            "No System is Safe."
+            <span class="text-red-400">- Mr. X</span>
+          </p>
+
+          <!-- Links -->
+          <div class="flex justify-center space-x-6 mb-6">
+            <a href="#home" class="text-gray-400 hover:text-cyan-400 transition-colors">Home</a>
+            <a href="#about" class="text-gray-400 hover:text-purple-500 transition-colors">About</a>
+            <a href="#projects" class="text-gray-400 hover:text-green-400 transition-colors"
+              >Projects</a
+            >
+            <a href="#contact" class="text-gray-400 hover:text-cyan-400 transition-colors"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Copyright -->
+          <p class="text-gray-500 text-sm">
+            &copy; 2026 Rivet Portfolio. All rights reserved. | Made with Enno Nurwansyah Rasyidi
+            <i class="fas fa-heart text-red-500 mx-1"></i> in Batam
+          </p>
+
+          <!-- Back to Top -->
+          <button
+            id="backToTop"
+            class="mt-8 w-12 h-12 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-500/20 transition-colors"
+          >
+            <i class="fas fa-chevron-up"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/typing.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
