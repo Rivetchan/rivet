@@ -1,10 +1,6 @@
 name = "rivet"
-type = "javascript"
-account_id = "fd5d72f860336cfd95d5785b820d7dff"
-workers_dev = true
-route = ""
-zone_id = ""
+main = ""  # kosong karena tidak ada worker script
+compatibility_date = "2026-01-23"
 
-[site]
-bucket = "."
-entry-point = "."
+[assets]
+directory = "."  # folder root project, tempat index.html & css/output.css
