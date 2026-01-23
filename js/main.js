@@ -122,11 +122,23 @@ async function loadProjects() {
       const projectCard = document.createElement('div')
       projectCard.className = 'project-card'
       projectCard.innerHTML = `
-                <div class="project-image">
+                <div class="project-image relative overflow-hidden">
+                  <img
+                    src="${project.thumbnail}"
+                    alt="${project.title}"
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+
+                  <!-- Fallback icon kalau gambar tidak ada -->
+                  <div class="absolute inset-0 hidden items-center justify-center bg-gray-900">
                     <i class="fas fa-code text-5xl text-white/70"></i>
-                    <div class="project-tech-badge bg-${getCategoryColor(project.category)}/20 text-${getCategoryColor(project.category)}">
-                        ${project.category}
-                    </div>
+                  </div>
+
+                  <!-- Category badge -->
+                  <div class="project-tech-badge bg-${getCategoryColor(project.category)}/20 text-${getCategoryColor(project.category)}">
+                    ${project.category}
+                  </div>
                 </div>
 
                 <div class="p-6">

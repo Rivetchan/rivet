@@ -1,11 +1,12 @@
 [
   {
-    "title": "CyberSecure Dashboard",
-    "description": "Dashboard keamanan siber real-time dengan visualisasi ancaman dan pelacakan aktivitas mencurigakan. Dilengkapi dengan sistem alert otomatis dan reporting.",
-    "techStack": ["React", "Node.js", "MongoDB", "Socket.io", "D3.js", "JWT"],
-    "githubLink": "https://github.com/cyberneon/cybersecure-dashboard",
-    "demoLink": "https://demo.cyberneon.tech",
-    "category": "Security"
+    "title": "Website Portfolio First Version",
+    "description": "Personal Portfolio Website 1.0.",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/Rivetchan/Portofolio",
+    "demoLink": "https://rivetchan.github.io/Portofolio/",
+    "category": "Web Development",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 1.png"
   },
   {
     "title": "NeonAuth System",
