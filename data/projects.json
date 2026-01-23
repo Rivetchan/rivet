@@ -1,7 +1,7 @@
 [
   {
-    "title": "Website Portfolio First Version",
-    "description": "Personal Portfolio Website 1.0.",
+    "title": "Website Portofolio First Version",
+    "description": "Personal Portofolio Website 1.0.",
     "techStack": ["HTML", "CSS", "JavaScript"],
     "githubLink": "https://github.com/Rivetchan/Portofolio",
     "demoLink": "https://rivetchan.github.io/Portofolio/",
@@ -9,12 +9,13 @@
     "thumbnail": "../assets/images/thumbnail/thumbnail 1.png"
   },
   {
-    "title": "NeonAuth System",
-    "description": "Sistem autentikasi dua faktor dengan enkripsi end-to-end dan monitoring login yang aman. Mendukung OAuth2, biometric, dan hardware tokens.",
-    "techStack": ["Node.js", "React", "JWT", "Redis", "WebSocket", "OAuth2"],
-    "githubLink": "https://github.com/cyberneon/neonauth",
-    "demoLink": "https://auth.cyberneon.tech",
-    "category": "Security"
+    "title": "Web introduction Linux Operating System",
+    "description": "A website that introduces the Linux Operating System, covering its fundamentals, distributions, features, and real-world usage. This project is designed to help beginners understand Linux concepts, command-line basics, and its role in servers, development, and cybersecurity through a clean, informative, and user-friendly interface.",
+    "techStack": ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    "githubLink": "https://github.com/Rivetchan/Web-Introduce-Linux",
+    "demoLink": "https://rivetchan.github.io/Web-Introduce-Linux/",
+    "category": "Web Development",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 2.png"
   },
   {
     "title": "CodeVault Manager",
