@@ -205,8 +205,9 @@ async function loadCertificates() {
                     <span class="text-green-400 font-share-tech">${cert.year}</span>
                 </div>
 
-                <a href="#" class="text-cyan-400 hover:text-cyan-300 text-sm transition-colors inline-flex items-center">
-                    <i class="fas fa-external-link-alt mr-2"></i> View Certificate
+                <a href="#" onclick="openCertificate('${cert.link}')"
+                  class="text-cyan-400 hover:text-cyan-300 text-sm inline-flex items-center">
+                  <i class="fas fa-eye mr-2"></i> View Certificate
                 </a>
             `
 
@@ -433,7 +434,7 @@ function getCategoryColor(category) {
     Frontend: 'cyan',
     Backend: 'green',
     Database: 'blue',
-    DevOps: 'purple, pink',
+    DevOps: 'purple',
     Security: 'red',
     Development: 'cyan',
     'Web Development': 'purple',

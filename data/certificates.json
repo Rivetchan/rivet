@@ -1,58 +1,18 @@
 [
   {
-    "title": "AWS Certified Solutions Architect",
-    "organizer": "Amazon Web Services",
+    "title": "Riau Islands Youth Pledge Festival Second Place",
+    "organizer": "Youth and Sports Service (Dispora) of Riau Islands Province",
     "year": "2023",
-    "category": "Cloud",
-    "icon": "fa-cloud"
+    "category": "Event",
+    "icon": "fa-trophy",
+    "link": "../assets/pdf/certificates/certificate 1.pdf"
   },
   {
     "title": "React Advanced Certification",
-    "organizer": "Meta (Facebook)",
-    "year": "2022",
-    "category": "Frontend",
-    "icon": "fa-react"
-  },
-  {
-    "title": "Cybersecurity Fundamentals",
-    "organizer": "Cisco Networking Academy",
-    "year": "2022",
-    "category": "Security",
-    "icon": "fa-shield-alt"
-  },
-  {
-    "title": "Node.js Backend Development",
-    "organizer": "Udemy",
-    "year": "2021",
-    "category": "Backend",
-    "icon": "fa-server"
-  },
-  {
-    "title": "MongoDB for Developers",
-    "organizer": "MongoDB University",
-    "year": "2021",
-    "category": "Database",
-    "icon": "fa-database"
-  },
-  {
-    "title": "Docker & Kubernetes Mastery",
-    "organizer": "Coursera",
-    "year": "2020",
-    "category": "DevOps",
-    "icon": "fa-docker"
-  },
-  {
-    "title": "JavaScript Algorithms & Data Structures",
-    "organizer": "freeCodeCamp",
-    "year": "2020",
-    "category": "Programming",
-    "icon": "fa-code"
-  },
-  {
-    "title": "Web Security Fundamentals",
-    "organizer": "OWASP",
-    "year": "2020",
-    "category": "Security",
-    "icon": "fa-lock"
+    "organizer": "Ministry of Education, Culture, Research and Technology and Bandar Lampung State Polytechnic",
+    "year": "2024",
+    "category": "Event",
+    "icon": "fa-trophy",
+    "link": "../assets/pdf/certificates/certificate 2.pdf"
   }
 ]
