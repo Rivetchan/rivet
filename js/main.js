@@ -433,7 +433,7 @@ function getCategoryColor(category) {
     Frontend: 'cyan',
     Backend: 'green',
     Database: 'blue',
-    DevOps: 'purple',
+    DevOps: 'purple, pink',
     Security: 'red',
     Development: 'cyan',
     'Web Development': 'purple',
