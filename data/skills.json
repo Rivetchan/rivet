@@ -1,26 +1,26 @@
 [
   {
-    "category": "Frontend",
-    "name": "React.js",
-    "level": 90,
-    "color": "cyan"
+    "category": "Backend",
+    "name": "C++",
+    "level": 85,
+    "color": "dark blue"
   },
   {
     "category": "Frontend",
-    "name": "JavaScript/ES6+",
-    "level": 80,
+    "name": "JavaScript",
+    "level": 70,
     "color": "yellow"
   },
   {
     "category": "Frontend",
-    "name": "HTML5/CSS3",
-    "level": 98,
+    "name": "HTML",
+    "level": 90,
     "color": "orange"
   },
   {
     "category": "Backend",
     "name": "Node.js",
-    "level": 88,
+    "level": 80,
     "color": "green"
   },
   {
@@ -32,14 +32,14 @@
   {
     "category": "Backend",
     "name": "Python",
-    "level": 75,
+    "level": 85,
     "color": "blue"
   },
   {
     "category": "Database",
-    "name": "MongoDB",
-    "level": 82,
-    "color": "green"
+    "name": "PHP",
+    "level": 80,
+    "color": "purplish blue"
   },
   {
     "category": "Database",
