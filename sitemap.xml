@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Single Page Application - Semua konten di satu URL -->
+    <url>
+        <loc>https://rivetchan.qzz.io/</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Untuk SEO, kita bisa membuat halaman statis untuk proyek yang penting -->
+
+    <!-- Portfolio Projects Page -->
+    <url>
+        <loc>https://rivetchan.qzz.io/projects</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Robotics Projects -->
+    <url>
+        <loc>https://rivetchan.qzz.io/projects/robotics</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Web Development Projects -->
+    <url>
+        <loc>https://rivetchan.qzz.io/projects/web-development</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Certifications Page -->
+    <url>
+        <loc>https://rivetchan.qzz.io/certifications</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- About/Resume Page -->
+    <url>
+        <loc>https://rivetchan.qzz.io/about</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>
