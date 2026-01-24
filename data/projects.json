@@ -41,7 +41,8 @@
     "techStack": ["Tailwind CSS", "JavaScript", "PHP", "MySQL"],
     "githubLink": "https://github.com/Rivetchan/Gallery-Web",
     "demoLink": "https://github.com/Rivetchan/Gallery-Web/blob/main/README.md",
-    "category": "Web Development"
+    "category": "Web Development",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 5.png"
   },
   {
     "title": "Field work practice (PKL) attendance application",
@@ -50,7 +51,7 @@
     "githubLink": "https://github.com/Rivetchan/Presensi-PKL",
     "demoLink": "https://github.com/Rivetchan/Presensi-PKL/blob/kominfo/Readme.md",
     "category": "Web Development",
-    "thumbnail": "../assets/images/thumbnail/thumbnail 5.png"
+    "thumbnail": "../assets/images/thumbnail/thumbnail 6.png"
   },
   {
     "title": "Website Portofolio Modern Version",
@@ -58,6 +59,7 @@
     "techStack": ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     "githubLink": "https://github.com/Rivetchan/rivet",
     "demoLink": "https://rivetchan.enno-nurwansyah-rasyidi.workers.dev/",
-    "category": "Web Development"
+    "category": "Web Development",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 7.png"
   }
 ]
