@@ -1,28 +1,37 @@
-🌐 Rivet — Website Modern dengan TailwindCSS
+# README.md
 
-Rivet adalah website modern yang dibangun dengan HTML, CSS, JavaScript, dan menggunakan TailwindCSS sebagai framework desain utama. Website ini responsif, interaktif, dan siap digunakan sebagai landing page, portofolio, atau halaman profil online.
+# 🌐 Rivet — Website Modern dengan TailwindCSS
 
-Demo Online: rivetchan.enno-nurwansyah-rasyidi.workers.dev
+**Rivet** adalah website modern yang dibangun dengan **HTML, CSS, JavaScript**, dan menggunakan **TailwindCSS** sebagai framework desain utama. Website ini responsif, interaktif, dan siap digunakan sebagai landing page, portofolio, atau halaman profil online.
 
-✨ Fitur Utama
+Demo Online: [rivetchan.enno-nurwansyah-rasyidi.workers.dev](https://rivetchan.enno-nurwansyah-rasyidi.workers.dev/)
 
-🎨 Desain Modern: Menggunakan TailwindCSS untuk UI yang bersih dan responsif
+---
 
-⚡ Frontend Interaktif: JavaScript digunakan untuk efek dan interaktivitas
+## ✨ Fitur Utama
 
-📱 Responsive: Optimal di desktop maupun perangkat mobile
+- 🎨 **Desain Modern**: Menggunakan TailwindCSS untuk UI yang bersih dan responsif  
+- ⚡ **Frontend Interaktif**: JavaScript digunakan untuk efek dan interaktivitas  
+- 📱 **Responsive**: Optimal di desktop maupun perangkat mobile  
+- 🛠 **Mudah Dikustomisasi**: Tailwind.config.js memungkinkan kustomisasi desain  
+- ☁️ **Siap Deployment**: Dapat langsung di-deploy ke Cloudflare Workers, Vercel, atau Netlify
 
-🛠 Mudah Dikustomisasi: Tailwind.config.js memungkinkan kustomisasi desain
+---
 
-☁️ Siap Deployment: Dapat langsung di-deploy ke Cloudflare Workers, Vercel, atau Netlify
+## 🛠 Teknologi yang Digunakan
 
-🛠 Teknologi yang Digunakan
-Komponen	Teknologi
-Frontend	HTML, CSS, JavaScript
-Styling	TailwindCSS
-Build Tool	Node.js, NPM
-Deployment	Cloudflare Workers / Static Hosting
-📁 Struktur Project
+| Komponen       | Teknologi                   |
+|----------------|----------------------------|
+| Frontend       | HTML, CSS, JavaScript      |
+| Styling        | TailwindCSS                |
+| Build Tool     | Node.js, NPM               |
+| Deployment     | Cloudflare Workers / Static Hosting |
+
+---
+
+## 📁 Struktur Project
+
+\`\`\`text
 rivet/
 ├── .github/             # Workflow GitHub Actions
 ├── .vscode/             # Konfigurasi VS Code
@@ -39,57 +48,66 @@ rivet/
 ├── script.js            # Script utama
 ├── tailwind.config.js   # Konfigurasi TailwindCSS
 └── wrangler.toml        # Konfigurasi Cloudflare Workers
+\`\`\`
 
-🚀 Cara Menjalankan Project (Local)
+---
 
-Clone repository
+## 🚀 Cara Menjalankan Project (Local)
 
+1. Clone repository
+\`\`\`bash
 git clone https://github.com/Rivetchan/rivet.git
 cd rivet
+\`\`\`
 
-
-Install dependencies
-
+2. Install dependencies
+\`\`\`bash
 npm install
+\`\`\`
 
-
-Jalankan development server
-
+3. Jalankan development server
+\`\`\`bash
 npm run dev
+\`\`\`
 
-
-Buka browser
-
+4. Buka browser
+\`\`\`
 http://localhost:3000
+\`\`\`
 
-🌐 Deployment
+---
+
+## 🌐 Deployment
 
 Website ini dapat di-deploy ke berbagai layanan hosting statis, seperti:
 
-Cloudflare Workers
+- Cloudflare Workers
+- Vercel
+- Netlify
+- GitHub Pages
 
-Vercel
+---
 
-Netlify
+## 🛠 Kontribusi
 
-GitHub Pages
-
-🛠 Kontribusi
-
-Kontribusi sangat diterima!
+Kontribusi sangat diterima!  
 Langkah sederhana:
 
-Fork repository ini
+1. Fork repository ini  
+2. Buat branch baru (\`git checkout -b feature/nama-fitur\`)  
+3. Tambahkan fitur atau perbaikan  
+4. Commit dan push ke branch  
+5. Buat Pull Request
 
-Buat branch baru (git checkout -b feature/nama-fitur)
+---
 
-Tambahkan fitur atau perbaikan
+## 👨‍💻 Pengembang
 
-Commit dan push ke branch
+**RivetChan**  
+Web Developer | Fokus pada desain modern, interaktif, dan responsif  
 
-Buat Pull Request
+---
 
-👨‍💻 Pengembang
+## 📄 Lisensi
 
-RivetChan
-Web Developer | Fokus pada desain modern, interaktif, dan responsif
+Lisensi default **MIT** — bebas digunakan, dimodifikasi, dan didistribusikan kembali.
