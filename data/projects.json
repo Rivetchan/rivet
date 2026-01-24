@@ -18,35 +18,46 @@
     "thumbnail": "../assets/images/thumbnail/thumbnail 2.png"
   },
   {
-    "title": "CodeVault Manager",
-    "description": "Aplikasi manajemen kode sumber dengan enkripsi AES-256 dan kontrol versi terenkripsi. Perfect untuk tim development yang membutuhkan keamanan ekstra.",
-    "techStack": ["Python", "Flask", "PostgreSQL", "Vue.js", "Docker", "AES-256"],
-    "githubLink": "https://github.com/cyberneon/codevault",
-    "demoLink": "https://vault.cyberneon.tech",
-    "category": "Development"
+    "title": "Blynk-Based Glass Cleaning Robot",
+    "description": "A robot that uses Blynk for remote control and monitoring. It features automatic cleaning, obstacle detection, and a user-friendly mobile app interface.",
+    "techStack": ["Arduino", "Blynk", "C++", "Motor Driver", "WiFi Module"],
+    "githubLink": "https://github.com/Rivetchan/Rivetchan-Robot-Pembersih-Kaca-Berbasis-Blynk",
+    "demoLink": "https://rivetchan.github.io/Rivetchan-Robot-Pembersih-Kaca-Berbasis-Blynk/",
+    "category": "IoT",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 3.png"
   },
   {
-    "title": "Network Scanner Pro",
-    "description": "Alat pemindaian jaringan dengan deteksi kerentanan dan pelaporan otomatis. Dilengkapi dengan dashboard interaktif dan export berbagai format.",
-    "techStack": ["Python", "Nmap", "React", "FastAPI", "SQLite", "Pandas"],
-    "githubLink": "https://github.com/cyberneon/networkscanner",
-    "demoLink": "https://scanner.cyberneon.tech",
-    "category": "Security"
+    "title": "Newspaper Clippings Management System",
+    "description": "A system for managing newspaper clippings with features for categorization, search, and archival.",
+    "techStack": ["PHP", "MySQL", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/Rivetchan/Web-Klipping-Koran",
+    "demoLink": "https://github.com/Rivetchan/Web-Klipping-Koran/blob/kominfo/Readme.md",
+    "category": "Web Development",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 4.png"
   },
   {
-    "title": "Cyber Blog Platform",
-    "description": "Platform blog dengan sistem keamanan tingkat lanjut dan proteksi terhadap serangan umum seperti XSS, SQL Injection, dan CSRF.",
-    "techStack": ["Next.js", "Node.js", "MongoDB", "Cloudflare", "JWT", "Markdown"],
-    "githubLink": "https://github.com/cyberneon/cyberblog",
-    "demoLink": "https://blog.cyberneon.tech",
+    "title": "Gallery Photo",
+    "description": "A responsive photo gallery web application that allows users to upload, view, and manage their photo collections with features like categorization and search functionality.",
+    "techStack": ["Tailwind CSS", "JavaScript", "PHP", "MySQL"],
+    "githubLink": "https://github.com/Rivetchan/Gallery-Web",
+    "demoLink": "https://github.com/Rivetchan/Gallery-Web/blob/main/README.md",
     "category": "Web Development"
   },
   {
-    "title": "Portfolio Tracker",
-    "description": "Aplikasi pelacakan portfolio developer dengan analisis teknologi dan rekomendasi skill. Visualisasi data interaktif dengan Chart.js.",
-    "techStack": ["React", "Tailwind CSS", "Chart.js", "Express", "MySQL", "REST API"],
-    "githubLink": "https://github.com/cyberneon/portfolio-tracker",
-    "demoLink": "https://tracker.cyberneon.tech",
+    "title": "Field work practice (PKL) attendance application",
+    "description": "A web-based attendance application designed for managing and tracking student attendance during field work practice (PKL). The application allows students to log their attendance, view schedules, and receive notifications, while administrators can monitor attendance records and generate reports.",
+    "techStack": ["PHP", "MySQL", "JavaScript", "codeign"],
+    "githubLink": "https://github.com/Rivetchan/Presensi-PKL",
+    "demoLink": "https://github.com/Rivetchan/Presensi-PKL/blob/kominfo/Readme.md",
+    "category": "Web Development",
+    "thumbnail": "../assets/images/thumbnail/thumbnail 5.png"
+  },
+  {
+    "title": "Website Portofolio Modern Version",
+    "description": "A modern personal portfolio website showcasing projects, skills, and experiences with a sleek design and responsive layout.",
+    "techStack": ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    "githubLink": "https://github.com/Rivetchan/rivet",
+    "demoLink": "https://rivetchan.enno-nurwansyah-rasyidi.workers.dev/",
     "category": "Web Development"
   }
 ]
